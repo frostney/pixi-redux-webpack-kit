@@ -3,6 +3,7 @@ import { Application, Sprite, loader } from 'pixi.js';
 import { GAME_WIDTH, GAME_HEIGHT } from './constants';
 import { GameScene, MainMenu } from './scenes';
 import heroImage from './assets/hero_front.png';
+import './main.css';
 
 // The application will create a renderer using WebGL, if possible,
 // with a fallback to a canvas render. It will also setup the ticker
