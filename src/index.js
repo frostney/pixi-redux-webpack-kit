@@ -13,9 +13,14 @@ const app = new Application({
   height: GAME_HEIGHT,
 });
 
+const root = document.createElement("div");
+root.id = 'root';
+
+root.appendChild(app.view);
+
 // The application will create a canvas element for you that you
 // can then insert into the DOM
-document.body.appendChild(app.view);
+document.body.appendChild(root);
 
 // load the texture we need
 loader.add('hero', heroImage).load((loaderObj, resources) => {
